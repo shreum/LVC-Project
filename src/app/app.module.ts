@@ -18,6 +18,8 @@ import { JavaComponent } from './java/java.component';
 import { CplusplusComponent } from './cplusplus/cplusplus.component';
 import { PythonComponent } from './python/python.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RestUserComponent } from './rest-user/rest-user.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,10 +38,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     FullStackComponent,
     JavaComponent,
     CplusplusComponent,
-    PythonComponent
+    PythonComponent,
+    RestUserComponent
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule,
+    BrowserModule,ReactiveFormsModule,HttpClientModule,
     routes
   ],
   providers: [],

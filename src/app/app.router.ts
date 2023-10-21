@@ -16,6 +16,7 @@ import { FullStackComponent } from './full-stack/full-stack.component';
 import { JavaComponent } from './java/java.component';
 import { CplusplusComponent } from './cplusplus/cplusplus.component';
 import { PythonComponent } from './python/python.component';
+import { RestUserComponent } from './rest-user/rest-user.component';
 
 export const router: Routes = [
     { path: '', redirectTo: 'app-root', pathMatch: 'full' }, //default page
@@ -33,7 +34,8 @@ export const router: Routes = [
     {path:'full-stack',component:FullStackComponent},
     {path:'java',component:JavaComponent},
     {path:'c++',component:CplusplusComponent},
-    {path:'python',component:PythonComponent}
+    {path:'python',component:PythonComponent},
+    {path:'rest-user',component:RestUserComponent}
 
 ];
 
